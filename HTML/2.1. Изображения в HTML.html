@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изображения в HTML</title>
+</head>
+<body>
+  <h1>Изображения в HTML</h1>
+  <h2>Пример</h2>
+  <div class="figure">
+    <figcaption>Нидерландские пословицы</figcaption>
+    <img src="public/picture.jpeg" alt="Картиночка" title="Нидерландские пословицы" width="900px" height="700px">
+  </div>
+  <h2>Пояснения</h2>
+  <h3>Теги</h3>
+  <ul>
+    <li><b>img</b> - вставка изображения в документ</li>
+    <li><b>figcaption</b> - название изображения</li>
+    <li><b>figure</b> - блок для изображения</li>
+  </ul>
+  <h3>Атрибуты img</h3>
+  <ul>
+    <li><b>src</b> - путь до изображения. Может быть в виде ссылки или пути до файла</li>
+    <li><b>alt</b> - текстовая замена изображения в случаях, когда картинка не появилась по какой-то причине</li>
+    <li><b>title</b> - текстовое описание изображения при наведении курсора на него</li>
+    <li><b>width</b> - ширина изображения</li>
+    <li><b>height</b> - высота изображения</li>
+  </ul>
+  <h3>Изображения в CSS</h3>
+  <pre>
+    <code>
+      body {
+        background-image: url("public/picture.jpeg");
+      }
+    </code>
+  </pre>
+</body>
+</html>

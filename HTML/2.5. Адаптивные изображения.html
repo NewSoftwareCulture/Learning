@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивные изображения</title>
+</head>
+<body style="margin:0; padding: 0;">
+  <h1>Адаптивные изображения</h1>
+  <h2>Примеры</h2>
+  <img
+      srcset="public/picture.jpeg 2080w,
+              public/picture.jpeg 2080w,
+              public/picture.jpeg 2080w"
+      sizes="(max-width: 320px) 280px,
+             (max-width: 600px) 320px,
+             600px"
+      src="public/picture.jpeg"
+      alt="Elva dressed as a fairy"
+  >
+  <hr>
+  <picture>
+    <source media="(max-width: 200px)" srcset="public/favicon.png" width="50px">
+    <source media="(max-width: 300px)" srcset="public/rect.svg" width="200px">
+    <source media="(max-width: 600px)" srcset="public/picture.jpeg" width="300px">
+    <img src="public/picture.jpeg" alt="Chris standing up holding his daughter Elva" width="700px">
+  </picture>
+</body>
+</html>
