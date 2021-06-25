@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основы работы с таблицами HTML</title>
+</head>
+<body>
+  <h1>Основы работы с таблицами HTML</h1>
+  <p>Таблица - это структурированный набор данных, состоящий из строк и столбцов (табличных данных). Таблицы позволяют быстро и легко посмотреть значения, показывающие некоторую взаимосвязь между различными типами данных, например - человек и его возраст, или расписание в плавательном бассейне.</p>
+  <h2>Примеры</h2>
+  <table border="1">
+    <caption>Personal pronouns</caption>
+     <tr>
+      <td colspan="3">&nbsp;</td>
+      <th scope="col">Subject</th>
+      <th scope="col">Object</th>
+     </tr>
+     <tr>
+      <th rowspan="5" scope="rowgroup">Singular</th>
+      <th colspan="2" scope="row">1st Person</th>
+      <td>I</td>
+      <td>me</td>
+     </tr>
+     <tr>
+      <th colspan="2" scope="row">2nd Person</th>
+      <td>you</td>
+      <td>you</td>
+     </tr>
+     <tr>
+      <th rowspan="3" scope="rowgroup">3rd Person</th>
+      <th class="symbol" scope="row">♂</th>
+      <td>he</td>
+      <td>him</td>
+     </tr>
+     <tr>
+      <th class="symbol" scope="row">♀</th>
+      <td>she</td>
+      <td>her</td>
+     </tr>
+     <tr>
+      <th class="symbol" scope="row">o</th>
+      <td>it</td>
+      <td>it</td>
+     </tr>
+     <tr>
+      <th rowspan="3" scope="rowgroup">Plural</th>
+      <th colspan="2" scope="row">1st Person</th>
+      <td>we</td>
+      <td>we</td>
+     </tr>
+     <tr>
+      <th colspan="2" scope="row">2nd Person</th>
+      <td>you</td>
+      <td>you</td>
+     </tr>
+     <tr>
+      <th colspan="2" scope="row">3rd Person</th>
+      <td>they</td>
+      <td>they</td>
+     </tr>
+   </table>
+   <br>
+   <table>
+    <colgroup>
+      <!-- <col> -->
+      <col style="background-color: yellow" span="2">
+      <!-- <col> -->
+    </colgroup>
+    <tr>
+      <th>Data 1</th>
+      <th>Data 2</th>
+      <th>Data 3</th>
+    </tr>
+    <tr>
+      <td>Calcutta</td>
+      <td>Orange</td>
+    </tr>
+    <tr>
+      <td>Robots</td>
+      <td>Jazz</td>
+    </tr>
+  </table>
+  <h2>Теги</h2>
+  <ul>
+    <li><b>table</b> - создание таблицы </li>
+    <li><b>caption</b> - заголовок таблицы </li>
+    <li><b>tr</b> - строка (table row => tr)</li>
+    <li><b>td</b> - ячейка (table data => td)</li>
+    <li><b>th</b> - ячейка для заголовка (table header => th)</li>
+    <li><b>colgroup</b> - </li>
+    <li><b>col</b> - </li>
+  </ul>
+  <h2>Атрибуты th</h2>
+  <ul>
+    <li><b>colspan</b> - объединение ячеек в столбцах </li>
+    <li><b>rowspan</b> - объединение ячеек в строках </li>
+    <li><b>span</b> - объединение стилей ячеек </li>
+  </ul>
+</body>
+</html>
