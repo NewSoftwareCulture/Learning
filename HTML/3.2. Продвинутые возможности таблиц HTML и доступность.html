@@ -8,5 +8,43 @@
 </head>
 <body>
   <h1>Продвинутые возможности таблиц HTML и доступность</h1>
+
+  <table>
+    <caption>Dinosaurs in the Jurassic period</caption>
+    <thead>
+      <tr>
+        <th id="purchase">Purchase</th>
+        <th id="location">Location</th>
+        <th id="date">Date</th>
+        <th id="evaluation">Evaluation</th>
+        <th id="cost">Cost (€)</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th id="haircut">Haircut</th>
+      <td headers="location haircut">Hairdresser</td>
+      <td headers="date haircut">12/09</td>
+      <td headers="evaluation haircut">Great idea</td>
+      <td headers="cost haircut">30</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h2>Теги</h2>
+  <ul>
+    <li><b>caption</b> - название таблицы</li>
+    <li><b>thead</b> - обертка для заголовка таблицы</li>
+    <li><b>tbody</b> - обертка для тела таблицы </li>
+    <li><b>tfoot</b> - обертка для окончания таблицы </li>
+  </ul>
+  <h2>Атрибуты</h2>
+  <ul>
+    <li><b>th.scope</b> - определение ячейки, как заголовка (col, row, colgroup и rowgroup)</li>
+    <li><b>th.id</b> - идентификатор ячейки</li>
+    <li><b>td.headers</b> - каждый headers атрибут должен содержать список всех id , разделённый пробелами, ко всем th элементам которые действуют как заголовок для этой ячейки.</li>
+    <li><b></b> - </li>
+    <li><b></b> - </li>
+  </ul>
 </body>
 </html>
